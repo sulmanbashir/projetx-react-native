@@ -11,8 +11,8 @@
 <p>    4.2 Open another terminal, go to your root project and run this command 'react-native run-ios'</p>
 
 <p>Error Solution</p>
-<p>If you see this issue :</p>
+<p>If you see this issue : (only with iOS)</p>
 <p>"Error: While resolving module `react-native-vector-icons/MaterialIcons`, the Haste package `react-native-vector-icons` was found"</p>
 <p>Solution: From your root project, run this command :</p>
 <p>rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json</p>
-<p>Now from xcode run again your iOS project</p>
+<p>Now 'npm start' and run again from xcode</p>
