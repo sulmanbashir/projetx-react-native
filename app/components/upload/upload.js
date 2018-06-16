@@ -66,10 +66,16 @@ export class Upload extends React.Component {
     }
 
     sendVideoToDropbox() {
-        var extension = ".mov";
+        var extension = null;
+        
+        if(Platform.OS === 'ios') {
+            extension = ".mov";
+        } else {
+            extension = ".mp4"; 
+        } 
         
         if (this.state.VideoName == null) {
-            this.state.VideoName = "démo.mov";
+            this.state.VideoName = "démo" + extension;
         } else {
             this.state.VideoName = this.state.VideoName + extension;    
         }

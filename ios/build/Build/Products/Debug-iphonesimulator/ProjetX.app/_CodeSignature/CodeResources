@@ -28,9 +28,50 @@
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
 		</data>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<data>
+		Tvuq/w6S5/l+mcuMpS91/YjZ2PU=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<data>
+		6cPENvjjcXfDfBToJJ1118da8zc=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<data>
+		0fLvEeGLEThn4UBToFYXic4rqjA=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<data>
+		W8UHQlJOUHUdjrnh0RUqh9qxkzY=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		/6b73ybjbzwjPUHccodzeLJKGpQ=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		3NizfJMeU0sJP08q8Qi7wX/AyvI=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		+mvvcw5UT9t0SkNxKWk0dLOay+4=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		qhk6hXDyQp/YYzEpKIxg0bW3tlk=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		UrJH3XmUG/sBx4z5C46pLIw3ixw=
+		wdcptLTtGlUbhdVF6CUO3jVlEZ4=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -51,6 +92,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/ProjetXTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		1jNJT+5av7HYlUE8X/b1zzTJ3T8=
+		</data>
+		<key>PlugIns/ProjetXTests.xctest.dSYM/Contents/Resources/DWARF/ProjetXTests</key>
+		<data>
+		8BtWbnJpL6HSiRm6IIeLIRA+pXo=
+		</data>
+		<key>PlugIns/ProjetXTests.xctest/Info.plist</key>
+		<data>
+		XykhSOmDa+vBxPGVtYgZ79V1fb0=
+		</data>
+		<key>PlugIns/ProjetXTests.xctest/ProjetXTests</key>
+		<data>
+		nzfYq1pROGwI7Lgmxxv6Ffmy1uA=
+		</data>
+		<key>PlugIns/ProjetXTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		P1w1t+tSsjDHa9rQllKVmxc+IYM=
 		</data>
 		<key>Roboto.ttf</key>
 		<data>
@@ -145,6 +206,107 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Tvuq/w6S5/l+mcuMpS91/YjZ2PU=
+			</data>
+			<key>hash2</key>
+			<data>
+			RFPwuGunUCg671vkap3nZ2ykF77o4s2j7zDAn2XbOco=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6cPENvjjcXfDfBToJJ1118da8zc=
+			</data>
+			<key>hash2</key>
+			<data>
+			LLPF72z23yVBbXYfe0hb4bJQTJFSRVDBk5OyUDe3bos=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0fLvEeGLEThn4UBToFYXic4rqjA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jru3xyO+9Pka43kPgZquwkzmdyGftteE5+HGSD6YRdY=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W8UHQlJOUHUdjrnh0RUqh9qxkzY=
+			</data>
+			<key>hash2</key>
+			<data>
+			FPdP4nFPVQpcTGvPqKiPySck4vZwcjNstcWB9HweZYA=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/6b73ybjbzwjPUHccodzeLJKGpQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			1uGNx3Hih75LqpmMmnSTa4Vvqk69BmdnsWtAABkb2Ow=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3NizfJMeU0sJP08q8Qi7wX/AyvI=
+			</data>
+			<key>hash2</key>
+			<data>
+			XSjXtfthzzaopwW6oSnMLrhafOkn9KkU9ZbZ/aIqCok=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+mvvcw5UT9t0SkNxKWk0dLOay+4=
+			</data>
+			<key>hash2</key>
+			<data>
+			LOX9OCUqqITwfF5IEPUIrj9+m8hK39QCJl4WbXY272o=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qhk6hXDyQp/YYzEpKIxg0bW3tlk=
+			</data>
+			<key>hash2</key>
+			<data>
+			L4ikvo5qrwsx21+syxZrwgRwrNbc3av4ZtEyZl/yF78=
+			</data>
+		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -187,6 +349,61 @@
 			<key>hash2</key>
 			<data>
 			sw1aNDI0CqTWoFwAl/BoysSnzVrJqfoRSzi3y6/KJCM=
+			</data>
+		</dict>
+		<key>PlugIns/ProjetXTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1jNJT+5av7HYlUE8X/b1zzTJ3T8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ep3mCN0hoi0U3ycku5Ft9/+x7KPw08FRMum80+kIXBk=
+			</data>
+		</dict>
+		<key>PlugIns/ProjetXTests.xctest.dSYM/Contents/Resources/DWARF/ProjetXTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8BtWbnJpL6HSiRm6IIeLIRA+pXo=
+			</data>
+			<key>hash2</key>
+			<data>
+			7xNB5nqTKEQYHrIeJfX9CATs3rL2/iVI+Dq7ruCO9G0=
+			</data>
+		</dict>
+		<key>PlugIns/ProjetXTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XykhSOmDa+vBxPGVtYgZ79V1fb0=
+			</data>
+			<key>hash2</key>
+			<data>
+			0IpCt7e1bOVm6zCaOF7sI15RyPmESAwQgxcC+Eli09M=
+			</data>
+		</dict>
+		<key>PlugIns/ProjetXTests.xctest/ProjetXTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nzfYq1pROGwI7Lgmxxv6Ffmy1uA=
+			</data>
+			<key>hash2</key>
+			<data>
+			5Ga4uGpgiW6NDSr21HqKzV5bm3kZ8lXf4PAqGY8i8Fg=
+			</data>
+		</dict>
+		<key>PlugIns/ProjetXTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P1w1t+tSsjDHa9rQllKVmxc+IYM=
+			</data>
+			<key>hash2</key>
+			<data>
+			zmvAD/zUdUuMn6Wa8leZ8R84UgKomEkfUQpP5heWR6w=
 			</data>
 		</dict>
 		<key>Roboto.ttf</key>
