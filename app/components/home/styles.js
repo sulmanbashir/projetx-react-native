@@ -72,5 +72,26 @@ export const styles = StyleSheet.create({
   },
   WebViewContainer: {
     marginTop: (Platform.OS == 'ios') ? 20 : 0 
-  }
+  },
+  button: {
+    backgroundColor: '#88cc88',
+    height: 40,
+    margin: 10,
+    borderRadius: 5,
+    padding: 3,
+    alignItems: 'center',
+    justifyContent:'center',
+  },
+  buttonTitle: {
+    color: '#ffffff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  textInput: {
+    height: 40, 
+    borderColor: 'gray', 
+    borderWidth: 1, 
+    color : "blue",
+    width: 200
+ },
 });

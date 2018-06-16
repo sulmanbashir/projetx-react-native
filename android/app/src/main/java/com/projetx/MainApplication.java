@@ -3,6 +3,11 @@ package com.projetx;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import fr.snapp.imagebase64.RNImgToBase64Package;
+import com.rnfs.RNFSPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import com.brentvatne.react.ReactVideoPackage;
+import com.imagepicker.ImagePickerPackage;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
@@ -26,6 +31,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNImgToBase64Package(),
+            new RNFSPackage(),
+            new RNFetchBlobPackage(),
+            new ReactVideoPackage(),
+            new ImagePickerPackage(),
             new ReactNativeYouTube(),
             new VectorIconsPackage(),
             new RNI18nPackage()

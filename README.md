@@ -1,6 +1,6 @@
-<p>Projet X - Play video from one youtube channel</p>
+<p>Projet X - Play video & upload videp from your device to youtube channel</p>
 <p>1.  git clone https://github.com/sulmanbashir/projetx-react-native.git</p>
-<p>2.  cd projetx-react-native </p>
+<p>2.  cd projetx-react-native && npm install</p>
 <p>3.  For running on iOS (only supported by Mac)</p>
 <p>    3.1 In your root project run 'npm start' </p>
 <p>    3.2 In your folder/finder, go to the root of your project ios/ => click on ProjetX.xcodeproj </p>

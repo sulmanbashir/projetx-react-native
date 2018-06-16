@@ -9,7 +9,7 @@ import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { LoadingIndicator } from '../loadingIndicator/loadingIndicator';
 
 const apiKey = 'AIzaSyC7uBEOA4YuSOkgbBOG-SUfuv_QTe-T3To';
-const channelId = 'UCnTCkU3VKG8NB9uJhZ1gf8w';
+const channelId = 'UCCVxHgWmdVt5aOeCW-WGxRg';
 const results = 30;
 
 export class Home extends React.Component {
