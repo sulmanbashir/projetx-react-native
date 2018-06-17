@@ -12,7 +12,7 @@
        * 4.3 Open another terminal, go to your root project and run this command 'react-native run-ios'
 
 # __Error Solution__
-## If you see this issue : (only with iOS)
+## If you see this issue : (iOS and Android)
 ## "Error: While resolving module `react-native-vector-icons/MaterialIcons`, the Haste package `react-native-vector-icons` was found"
 ## __Solution__: From your root project, run this command :
 ## `rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json`
