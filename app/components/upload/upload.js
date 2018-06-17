@@ -17,8 +17,9 @@ import ImagePicker from 'react-native-image-picker';
 import RNFetchBlob from 'react-native-fetch-blob';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { styles } from '../home/styles';
-
 import { StackNavigator, NavigationActions, DrawerNavigator } from 'react-navigation';
+
+
 const EntityAction = NavigationActions.reset({
     index: 0,
     actions: [
@@ -35,7 +36,8 @@ export class Upload extends React.Component {
     state = {
       VideoSource: null,
       VideoName: null,
-      progress: null,
+      progress_value: 0,
+      VideoSourceAndroid: null,
     };
     selectVideoTapped() {
         const options = {
@@ -46,8 +48,9 @@ export class Upload extends React.Component {
         };
 
         ImagePicker.showImagePicker(options, (response) => {
-            console.log('Response = ', response);
-
+            console.log('Response = ', response.path);
+            this.state.VideoSourceAndroid = response.path;
+            
             if (response.didCancel) {
                 console.log('User cancelled video picker');
             }
@@ -67,11 +70,13 @@ export class Upload extends React.Component {
 
     sendVideoToDropbox() {
         var extension = null;
-        
+        var root_path = null;
         if(Platform.OS === 'ios') {
             extension = ".mov";
-        } else {
-            extension = ".mp4"; 
+            root_path = "RNFetchBlob-"+this.state.VideoSource;
+        } else if (Platform.OS === 'android') {
+            extension = ".mp4";
+            root_path = "RNFetchBlob-file:/"+this.state.VideoSourceAndroid;
         } 
         
         if (this.state.VideoName == null) {
@@ -88,10 +93,10 @@ export class Upload extends React.Component {
                   mute : false
                 }),
                 'Content-Type' : 'application/octet-stream',
-              }, 'RNFetchBlob-'+this.state.VideoSource)
+              }, root_path)
               .uploadProgress((received, total) => {
                 console.log('progress ' + Math.floor(received/total*100) + '%')
-                this.state.progress = Math.floor(received/total*100) + '%';
+                this.setState({progress_value: Math.floor(received/total*100)});
               })
               .then((res) => {
                 console.log("work good");
@@ -122,15 +127,16 @@ export class Upload extends React.Component {
                        autoCapitalize = "none" 
                        value={this.state.VideoName}
                        onChangeText={(VideoName) => this.setState({VideoName})}/>
-                    <TouchableOpacity style={styles.button} onPress={this.sendVideoToDropbox.bind(this)}>
+                    <TouchableOpacity style={styles.buttonSend} onPress={this.sendVideoToDropbox.bind(this)}>
                         <Text style={styles.buttonTitle}>Envoyer sur YouTube</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={this.selectVideoTapped.bind(this)}>
+                    <TouchableOpacity style={styles.buttonSelect} onPress={this.selectVideoTapped.bind(this)}>
                         <Text style={styles.buttonTitle}>Sélectionner une vidéo</Text>
                     </TouchableOpacity>
-                    <Text value={this.state.progress}></Text>
+                    <Text style = {{fontSize: 15, color: '#000'}}> Upload en cours : { parseFloat((this.state.progress_value).toFixed(3))} %</Text>
                 </View>
             }
+
         </View>
       );
     }  

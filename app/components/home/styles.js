@@ -1,4 +1,4 @@
-import { StyleSheet,Platform } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
@@ -86,6 +86,24 @@ export const styles = StyleSheet.create({
     color: '#ffffff',
     fontSize: 18,
     fontWeight: 'bold',
+  },
+  buttonSend: {
+    backgroundColor: '#ff0000',
+    height: 40,
+    margin: 10,
+    borderRadius: 5,
+    padding: 1,
+    alignItems: 'center',
+    justifyContent:'center',
+  },
+  buttonSelect: {
+    backgroundColor: '#88cc88',
+    height: 40,
+    margin: 10,
+    borderRadius: 5,
+    padding: 0,
+    alignItems: 'center',
+    justifyContent:'center',
   },
   textInput: {
     height: 40, 
