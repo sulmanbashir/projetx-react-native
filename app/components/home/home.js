@@ -10,7 +10,7 @@ import { LoadingIndicator } from '../loadingIndicator/loadingIndicator';
 
 const apiKey = 'AIzaSyC7uBEOA4YuSOkgbBOG-SUfuv_QTe-T3To';
 const channelId = 'UCCVxHgWmdVt5aOeCW-WGxRg';
-const results = 30;
+const results = 15;
 
 export class Home extends React.Component {
     
