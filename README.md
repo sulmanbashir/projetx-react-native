@@ -9,7 +9,7 @@
 ## 4.  For running on Android
        * 4.1 In your root project run 'npm start'
        * 4.2 Connect your Android device to your computer (Android Studio or Android SDK is necessary)
-       * 4.3 Open another terminal, go to your root project and run this command 'react-native run-ios'
+       * 4.3 Open another terminal, go to your root project and run this command 'react-native run-android'
 
 # __Error Solution__
 ## If you see this issue : (iOS and Android)
