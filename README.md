@@ -1,7 +1,12 @@
 # Projet X - Play video & upload video from your device to youtube channel
 
 ## 1.  git clone https://github.com/sulmanbashir/projetx-react-native.git
-## 2.  cd projetx-react-native && npm install
+## 2.  Run these command :
+###    cd projetx-react-native
+###    npm install
+###    react-native link
+###    rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json
+
 ## 3.  For running on iOS (only supported by Mac)
        * 3.1 In your root project run 'npm start' 
        * 3.2 In your folder/finder, go to the root of your project ios/ => click on ProjetX.xcodeproj OR run command 'react-native run-ios'
