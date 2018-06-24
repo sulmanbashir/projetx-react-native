@@ -1,13 +1,40 @@
 import firebaseService from '../../enviroments/firebase';
 import * as types from './actionsTypes';
 
+const sessionRestoring = () => ({
+  type: types.SESSION_RESTORING,
+});
+
+const sessionLoading = () => ({
+  type: types.SESSION_LOADING,
+});
+
+const sessionSuccess = user => ({
+  type: types.SESSION_SUCCESS,
+  user,
+});
+
+const signupSuccess = user => ({
+  type: types.SIGNUP_SUCCESS,
+  user,
+});
+
+const sessionError = error => ({
+  type: types.SESSION_ERROR,
+  error,
+});
+
+const sessionLogout = () => ({
+  type: types.SESSION_LOGOUT,
+});
+
 export const restoreSession = () => (
-  dispatch => {
+  (dispatch) => {
     dispatch(sessionLoading());
     dispatch(sessionRestoring());
 
     firebaseService.auth()
-      .onAuthStateChanged(user => {
+      .onAuthStateChanged((user) => {
         if (user) {
           dispatch(sessionSuccess(user));
         } else {
@@ -18,38 +45,37 @@ export const restoreSession = () => (
 );
 
 export const loginUser = (email, password) => (
-  dispatch => {
+  (dispatch) => {
     dispatch(sessionLoading());
 
     firebaseService.auth()
       .signInWithEmailAndPassword(email, password)
-      .then(user => {
+      .then((user) => {
         dispatch(sessionSuccess(user));
       })
-      .catch(error => {
+      .catch((error) => {
         dispatch(sessionError(error.message));
       });
-
   }
 );
 
 export const signupUser = (email, password) => (
-  dispatch => {
+  (dispatch) => {
     dispatch(sessionLoading());
 
     firebaseService.auth()
       .createUserWithEmailAndPassword(email, password)
-      .then(user => {
+      .then((user) => {
         dispatch(signupSuccess(user));
       })
-      .catch(error => {
+      .catch((error) => {
         dispatch(sessionError(error.message));
       });
   }
 );
 
 export const logoutUser = () => (
-  dispatch => {
+  (dispatch) => {
     dispatch(sessionLoading());
 
     firebaseService.auth()
@@ -57,35 +83,8 @@ export const logoutUser = () => (
       .then(() => {
         dispatch(sessionLogout());
       })
-      .catch(error => {
+      .catch((error) => {
         dispatch(sessionError(error.message));
       });
   }
 );
-
-const sessionRestoring = () => ({
-  type: types.SESSION_RESTORING
-});
-
-const sessionLoading = () => ({
-  type: types.SESSION_LOADING
-});
-
-const sessionSuccess = user => ({
-  type: types.SESSION_SUCCESS,
-  user
-});
-
-const signupSuccess = user => ({
-  type: types.SIGNUP_SUCCESS,
-  user
-});
-
-const sessionError = error => ({
-  type: types.SESSION_ERROR,
-  error
-});
-
-const sessionLogout = () => ({
-  type: types.SESSION_LOGOUT
-});

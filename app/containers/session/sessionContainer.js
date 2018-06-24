@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { LoginFormComponent } from '../../components/auth/LoginForm/loginForm';
+import LoginFormComponent from '../../components/auth/LoginForm/loginForm';
 import { loginUser, restoreSession } from '../../actions/session/actions';
 
 const mapStateToProps = state => ({
@@ -8,12 +8,12 @@ const mapStateToProps = state => ({
   loading: state.sessionReducer.loading,
   user: state.sessionReducer.user,
   error: state.sessionReducer.error,
-  logged: state.sessionReducer.logged
+  logged: state.sessionReducer.logged,
 });
 
 const mapDispatchToProps = {
   login: loginUser,
-  restore: restoreSession
+  restore: restoreSession,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginFormComponent);

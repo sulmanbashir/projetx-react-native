@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import Upload from '../../components/upload/upload';
+import Edit from '../../components/edit/edit';
 
 const mapStateToProps = state => ({
   routes: state.routes,
 });
 
-export default connect(mapStateToProps)(Upload);
+export default connect(mapStateToProps)(Edit);

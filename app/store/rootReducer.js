@@ -5,5 +5,5 @@ import sessionReducer from '../reducers/session/sessionReducer';
 
 export default combineReducers({
   routesReducer,
-  sessionReducer
+  sessionReducer,
 });

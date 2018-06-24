@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import { styles } from './styles';
+import { Provider } from 'react-redux';
 import { Scene } from 'react-native-router-flux';
-import { connect, Provider } from 'react-redux';
+import React from 'react';
+import styles from './styles';
 
 import HomeContainer from '../../containers/home/homeContainer';
 import PlayVideoContainer from '../../containers/play-video/playvideoContainer';
@@ -9,13 +9,14 @@ import UploadContainer from '../../containers/upload/uploadContainer';
 import SessionContainer from '../../containers/session/sessionContainer';
 import SignupContainer from '../../containers/session/signupContainer';
 import MessageContainer from '../../containers/message/messageContainer';
+import EditContainer from '../../containers/edit/editContainer';
 
-import { RouterRedux } from '../../containers/routes/routesContainer';
-import { configureStore } from '../../store/store';
+import RouterRedux from '../../containers/routes/routesContainer';
+import configureStore from '../../store/store';
 
 const store = configureStore();
 
-export class Routes extends React.Component {
+class Routes extends React.Component {
   render() {
     return (
       <Provider store={store}>
@@ -27,9 +28,12 @@ export class Routes extends React.Component {
             <Scene key="play-video" component={PlayVideoContainer} title="Projet X"/>
             <Scene key="upload" component={UploadContainer} title="Upload Video"/>
             <Scene key="message" component={MessageContainer} title="Message"/>
+            <Scene key="edit" component={EditContainer} title="Parametre"/>
           </Scene>
         </RouterRedux>
       </ Provider>
     );
   }
 }
+
+export default Routes;

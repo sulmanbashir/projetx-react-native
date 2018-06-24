@@ -1,8 +1,7 @@
 import { StyleSheet, Platform } from 'react-native';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -13,24 +12,24 @@ export const styles = StyleSheet.create({
     height: 100,
   },
   primary: {
-    color: 'rgb(116, 70, 195)'
+    color: 'rgb(116, 70, 195)',
   },
   marginBox: {
     alignItems: 'center',
-    margin: 20
+    margin: 20,
   },
   title: {
     fontSize: 24,
-    margin: 20
+    margin: 20,
   },
   container: {
-    flex: 1
+    flex: 1,
   },
   body: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    padding: 30
+    padding: 30,
   },
   vids: {
     paddingBottom: 30,
@@ -39,17 +38,17 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
     justifyContent: 'center',
     borderBottomWidth: 0.6,
-    borderColor: '#aaa'
+    borderColor: '#aaa',
   },
   vidItems: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    padding: 10
+    padding: 10,
   },
   vidText: {
     padding: 20,
-    color: '#000'
+    color: '#000',
   },
   tabBar: {
     backgroundColor: '#fff',
@@ -57,21 +56,21 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     borderTopWidth: 0.5,
-    borderColor: '#bbb'
+    borderColor: '#bbb',
   },
   tabItems: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 5
+    paddingBottom: 5,
   },
   tabTitle: {
     fontSize: 11,
     color: '#333',
     paddingTop: 4,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
   WebViewContainer: {
-    marginTop: (Platform.OS == 'ios') ? 20 : 0 
+    marginTop: (Platform.OS === 'ios') ? 20 : 0,
   },
   button: {
     backgroundColor: '#88cc88',
@@ -80,7 +79,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 3,
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
   buttonTitle: {
     color: '#ffffff',
@@ -94,7 +93,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 1,
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
   buttonSelect: {
     backgroundColor: '#88cc88',
@@ -103,13 +102,15 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 0,
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
   textInput: {
-    height: 40, 
-    borderColor: 'gray', 
-    borderWidth: 1, 
-    color : "blue",
-    width: 200
- },
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    color: 'blue',
+    width: 200,
+  },
 });
+
+export default styles;

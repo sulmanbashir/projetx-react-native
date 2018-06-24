@@ -1,13 +1,13 @@
 import * as firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyAoH_fI88DkyYSd7UaHGI20VcDGbr_sOIo",
-    authDomain: "projetx-native.firebaseapp.com",
-    databaseURL: "https://projetx-native.firebaseio.com",
-    projectId: "projetx-native",
-    storageBucket: "projetx-native.appspot.com",
-    messagingSenderId: "158648858884"
-}
+  apiKey: 'AIzaSyAoH_fI88DkyYSd7UaHGI20VcDGbr_sOIo',
+  authDomain: 'projetx-native.firebaseapp.com',
+  databaseURL: 'https://projetx-native.firebaseio.com',
+  projectId: 'projetx-native',
+  storageBucket: 'projetx-native.appspot.com',
+  messagingSenderId: '158648858884',
+};
 
 let instance = null;
 

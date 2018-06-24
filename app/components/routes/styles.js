@@ -1,11 +1,12 @@
-
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   navBar: {
-    backgroundColor:'#ff0000',
+    backgroundColor: '#ff0000',
   },
   barButtonTextStyle: {
-    fontSize: 18
+    fontSize: 18,
   },
 });
+
+export default styles;

@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'stretch',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
   textInput: {
     backgroundColor: '#ffffff',
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 3,
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
   buttonTitle: {
     color: '#ffffff',
@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
   },
   imageBox: {
     alignItems: 'center',
-    marginTop: 20
+    marginTop: 20,
   },
   image: {
     width: 120,
@@ -40,5 +40,7 @@ export const styles = StyleSheet.create({
   },
   scrollView: {
     backgroundColor: '#e6e6e6',
-  }
+  },
 });
+
+export default styles;

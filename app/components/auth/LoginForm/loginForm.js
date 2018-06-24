@@ -1,36 +1,42 @@
-import React, { Component } from 'react';
-import { View, Alert, Image, Button } from 'react-native';
-import { BasicFormComponent } from '../BasicForm/basicForm';
-import { LoadingIndicator } from '../../loadingIndicator/loadingIndicator';
-import { styles } from '../BasicForm/styles';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { Actions } from 'react-native-router-flux';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { View, Alert, Image, Button } from 'react-native';
+import BasicFormComponent from '../BasicForm/basicForm';
+import LoadingIndicator from '../../loadingIndicator/loadingIndicator';
+import styles from '../BasicForm/styles';
 
-export class LoginFormComponent extends Component {
 
-  constructor(props) {
-    super(props);
-  }
+const logo = require('../../images/logo.png');
 
-  componentDidMount() {
-    this.props.restore();
-  }
-
-  componentDidUpdate(prevProps) {
-    if (!prevProps.error && this.props.error) {
-      Alert.alert('error', this.props.error);
+class LoginFormComponent extends Component {
+    static propTypes = {
+      restore: PropTypes.func,
+      error: PropTypes.string,
+      logged: PropTypes.bool,
+      login: PropTypes.func,
+      loading: PropTypes.bool,
+    };
+    componentDidMount() {
+      this.props.restore();
     }
-    if(this.props.logged) {
-      Actions.reset('home');
-    }
-  }
 
-  render() {
-    const { login, loading } = this.props;
-    return (
+    componentDidUpdate(prevProps) {
+      if (!prevProps.error && this.props.error) {
+        Alert.alert('error', this.props.error);
+      }
+      if (this.props.logged) {
+        Actions.reset('home');
+      }
+    }
+
+    render() {
+      const { login, loading } = this.props;
+      return (
       <KeyboardAwareScrollView style={styles.scrollView}>
         <View style={styles.imageBox}>
-          <Image style={styles.image} source={ require('../../images/logo.png') }/>
+          <Image style={styles.image} source={logo}/>
         </View>
         <View style={styles.loginBox}>
           {loading ? <LoadingIndicator color="#ffffff"
@@ -45,6 +51,9 @@ export class LoginFormComponent extends Component {
                   color="red"></Button> }
         </View>
       </KeyboardAwareScrollView>
-    );
-  }
+      );
+    }
 }
+
+export default LoginFormComponent;
+
